@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
-import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
 import { Box } from '@mui/system';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { IPictures } from '../../../pages';
 
 interface iGalleryItem {
@@ -11,7 +11,9 @@ interface iGalleryItem {
 export const GalleryItem: React.FC<iGalleryItem> = ({ picture }) => {
   return (
     <Box flexShrink={picture.xs} margin='10px'>
-      <img style={{ objectFit: 'contain' }} src={picture.src} alt={picture.name} />
+      <Link to={'/picture'}>
+        <img style={{ width: '100%', objectFit: 'contain' }} src={picture.src} alt={picture.name} />
+      </Link>
     </Box>
   );
 };
