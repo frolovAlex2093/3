@@ -5,13 +5,21 @@ import { GalleryItem } from './GalleryItem';
 
 interface IGalleryItems {
   pictures: IPictures[];
+  onclickPic: (id: number) => void;
 }
 
-export const GalleryItems: React.FC<IGalleryItems> = ({ pictures }) => {
+export const GalleryItems: React.FC<IGalleryItems> = ({ pictures, onclickPic }) => {
   return (
-    <Box display='flex' justifyContent='center' alignItems="center" textAlign="center" margin='0 auto' flexWrap='wrap'>
+    <Box
+      display='flex'
+      justifyContent='center'
+      alignItems='center'
+      textAlign='center'
+      margin='0 auto'
+      flexWrap='wrap'
+    >
       {pictures.map((pictures) => {
-        return <GalleryItem key={pictures.id} picture={pictures} />;
+        return <GalleryItem onclickPic={onclickPic} key={pictures.id} picture={pictures} />;
       })}
     </Box>
   );

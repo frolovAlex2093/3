@@ -4,6 +4,10 @@ import { Header } from '../components';
 import { GalleryItems } from '../components/GalleryItems';
 import { ILinks } from './About';
 
+interface IGallery {
+  onclickPic: (id: number) => void;
+}
+
 export type IPictures = {
   id: number;
   name: string;
@@ -21,7 +25,7 @@ const links: ILinks[] = [
   { name: 'Gallery', link: '/gallery' }
 ];
 
-const pictures: IPictures[] = [
+export const pictures: IPictures[] = [
   {
     id: 0,
     name: 'lorem',
@@ -61,15 +65,14 @@ const pictures: IPictures[] = [
       'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
     src: 'https://placehold.co/600x400',
     xs: 6
-  },
- 
+  }
 ];
 
-export const Gallery = () => {
+export const Gallery: React.FC<IGallery> = ({onclickPic}) => {
   return (
     <Box>
       <Header links={links}></Header>
-      <GalleryItems pictures={pictures}></GalleryItems>
+      <GalleryItems onclickPic={onclickPic} pictures={pictures}></GalleryItems>
     </Box>
   );
 };
