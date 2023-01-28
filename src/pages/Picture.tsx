@@ -3,6 +3,7 @@ import React from 'react';
 import { Header } from '../components';
 import { ILinks } from './About';
 import { pictures } from './Gallery';
+import './Picture.css';
 
 interface IPicture {
   id: number;
@@ -25,9 +26,9 @@ export const Picture: React.FC<IPicture> = ({ id }) => {
         {pictures.map((el) => {
           if (el.id === id) {
             return (
-              <Box key={el.id} display='flex' flexDirection='row'>
+              <Box key={el.id} display='flex' flexDirection='row' className='picture__container'>
                 <img
-                  style={{ objectFit: 'contain', marginRight: '25px' }}
+                  style={{ objectFit: 'contain', marginRight: '25px', width: '100%' }}
                   src={el.src}
                   alt={el.name}
                 />

@@ -30,6 +30,7 @@ export const AboutBlock = () => {
           margin='10px'
         >
           <img
+            className='AboutBlock__img'
             style={{
               display: 'block',
               // position: 'absolute',
@@ -42,8 +43,9 @@ export const AboutBlock = () => {
           />
         </Box>
         <Box
+          marginTop='10px'
           flexShrink='1'
-          marginLeft='30px'
+          // marginLeft='30px'
           // width='700px'
         >
           <Typography
@@ -65,7 +67,7 @@ export const AboutBlock = () => {
         justifyContent='space-between'
         width='70%'
       >
-        <Box marginLeft='30px'>
+        <Box marginTop='10px'>
           <Typography sx={{}}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas inventore corporis
             eum accusantium, provident nihil aperiam quasi suscipit voluptatem reiciendis ea. Beatae
@@ -81,6 +83,7 @@ export const AboutBlock = () => {
         </Box>
         <Box display='block' maxWidth='400px' width='100%' height='100%' margin='10px'>
           <img
+            className='AboutBlock__img'
             style={{
               display: 'block',
               objectFit: 'contain'

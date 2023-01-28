@@ -8,4 +8,8 @@
   .AboutBlock__container.reverse {
     flex-direction: column-reverse !important;
   }
+
+  .AboutBlock__img{
+    width: 100%;
+  }
 }
