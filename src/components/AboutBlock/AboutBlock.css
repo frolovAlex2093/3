@@ -1,0 +1,11 @@
+@media (max-width: 850px) {
+  .AboutBlock__container {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .AboutBlock__container.reverse {
+    flex-direction: column-reverse !important;
+  }
+}

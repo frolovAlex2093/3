@@ -8,7 +8,6 @@ interface iGalleryItem {
   picture: IPictures;
   onclickPic: (id: number) => void;
 }
-
 export const GalleryItem: React.FC<iGalleryItem> = ({ picture, onclickPic }) => {
   return (
     <Box flexShrink={picture.xs} margin='10px'>

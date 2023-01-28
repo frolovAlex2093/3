@@ -48,7 +48,7 @@
   color: black !important;
 }
 
-._ibg{
+._ibg {
   position: relative;
 }
 ._ibg img {
@@ -59,3 +59,4 @@
   left: 0;
   object-fit: cover;
 }
+
