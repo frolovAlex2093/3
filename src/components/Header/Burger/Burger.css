@@ -11,7 +11,7 @@
   }
   .change .burger__1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-8px, 7px);
   }
   .change .burger__2 {
     opacity: 0;
