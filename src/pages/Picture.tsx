@@ -34,7 +34,8 @@ export const Picture: React.FC<IPicture> = ({ id }) => {
                 />
                 <Box display='flex' flexDirection='column'>
                   <Typography variant='h2'>{el.name}</Typography>
-                  <Typography variant='subtitle1'>{el.description}</Typography>
+                  <Typography variant='h5'>{el.size}</Typography>
+                  <Typography variant='h5'>{el.year}</Typography>
                 </Box>
               </Box>
             );
