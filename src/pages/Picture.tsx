@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 import React from 'react';
 import { Header } from '../components';
 import { ILinks } from './About';
@@ -19,8 +19,10 @@ const links: ILinks[] = [
 ];
 
 export const Picture: React.FC<IPicture> = ({ id }) => {
+  const breakpoint = useMediaQuery('(min-width:701px)');
+
   return (
-    <Box>
+    <Box height='95vh'>
       <Header links={links}></Header>
       <Box maxWidth='1400px' width='100%' display='flex' justifyContent='center' marginTop='50px'>
         {pictures.map((el) => {
@@ -28,14 +30,29 @@ export const Picture: React.FC<IPicture> = ({ id }) => {
             return (
               <Box key={el.id} display='flex' flexDirection='row' className='picture__container'>
                 <img
-                  style={{ objectFit: 'contain', marginRight: '25px', width: '100%', maxWidth: "550px"}}
+                  style={{
+                    objectFit: 'contain',
+                    marginRight: '25px',
+                    width: '100%',
+                    maxWidth: '550px'
+                  }}
                   src={el.src}
                   alt={el.name}
                 />
-                <Box display='flex' flexDirection='column' maxWidth="500px">
-                  <Typography variant='h2'>{el.name}</Typography>
-                  <Typography variant='h5'>{el.size}</Typography>
-                  <Typography variant='h5'>{el.year}</Typography>
+                <Box display='flex' flexDirection='column' maxWidth='500px'>
+                  {breakpoint === false ? (
+                    <>
+                      <Typography variant='h5'>{el.name}</Typography>
+                      <Typography variant='subtitle1'>{el.size}</Typography>
+                      <Typography variant='subtitle1'>{el.year}</Typography>
+                    </>
+                  ) : (
+                    <>
+                      <Typography variant='h2'>{el.name}</Typography>
+                      <Typography variant='h5'>{el.size}</Typography>
+                      <Typography variant='h5'>{el.year}</Typography>
+                    </>
+                  )}
                 </Box>
               </Box>
             );
