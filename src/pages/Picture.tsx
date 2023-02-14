@@ -14,8 +14,8 @@ const links: ILinks[] = [
     name: 'Home',
     link: '/'
   },
-  { name: 'About', link: '/about', active: true },
-  { name: 'Gallery', link: '/gallery' }
+  { name: 'О себе', link: '/about', active: true },
+  { name: 'Галерея', link: '/gallery' }
 ];
 
 export const Picture: React.FC<IPicture> = ({ id }) => {
@@ -28,11 +28,11 @@ export const Picture: React.FC<IPicture> = ({ id }) => {
             return (
               <Box key={el.id} display='flex' flexDirection='row' className='picture__container'>
                 <img
-                  style={{ objectFit: 'contain', marginRight: '25px', width: '100%' }}
+                  style={{ objectFit: 'contain', marginRight: '25px', width: '100%', maxWidth: "550px"}}
                   src={el.src}
                   alt={el.name}
                 />
-                <Box display='flex' flexDirection='column'>
+                <Box display='flex' flexDirection='column' maxWidth="500px">
                   <Typography variant='h2'>{el.name}</Typography>
                   <Typography variant='h5'>{el.size}</Typography>
                   <Typography variant='h5'>{el.year}</Typography>

@@ -7,7 +7,7 @@ export const Logo = () => {
     <Box display='flex' margin='0 auto'>
       <Link to='/about' style={{ textDecoration: 'none' }}>
         <Typography variant='h3' component='h3' gutterBottom color='black' fontSize='35px'>
-          Lorem ipsum dolor
+          Михаил Цымбалюк
         </Typography>
       </Link>
     </Box>

@@ -1,3 +1,10 @@
+html{
+  background-image: url("../public/pattern/old-paper.jpg") ;
+  background-size: 300px;
+  /* background-image: url("../public/pattern/7b728944-f6d8-4fad-962a-90a1dec2c6ca.jpeg"); */
+  background-repeat: repeat;
+}
+
 body {
   margin: '15px';
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
@@ -5,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: '15px';
+
 }
 
 code {
