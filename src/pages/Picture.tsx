@@ -1,6 +1,7 @@
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import React from 'react';
-import { Header } from '../components';
+import { Header, SwiperHome } from '../components';
+import { SwiperPicture } from '../components/Swiper/SwiperPicture';
 import { ILinks } from './About';
 import { pictures } from './Gallery';
 import './Picture.css';
@@ -22,8 +23,20 @@ export const Picture: React.FC<IPicture> = ({ id }) => {
   const breakpoint = useMediaQuery('(min-width:701px)');
 
   return (
+
+
+
+
     <Box height='95vh'>
+
       <Header links={links}></Header>
+      <Box height='100vh'>
+        <SwiperPicture id={id}></SwiperPicture>
+      </Box>
+
+
+
+      {/* <Header links={links}></Header>
       <Box maxWidth='1400px' width='100%' display='flex' justifyContent='center' marginTop='50px'>
         {pictures.map((el) => {
           if (el.id === id) {
@@ -58,7 +71,7 @@ export const Picture: React.FC<IPicture> = ({ id }) => {
             );
           }
         })}
-      </Box>
+      </Box> */}
     </Box>
   );
 };

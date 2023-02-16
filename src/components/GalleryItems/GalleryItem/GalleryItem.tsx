@@ -11,7 +11,9 @@ interface iGalleryItem {
 export const GalleryItem: React.FC<iGalleryItem> = ({ picture, onclickPic }) => {
   
   return (
-    <Box flexShrink={picture.xs} margin='5px'>
+    <Box
+    //  flexShrink={picture.xs}
+      margin='5px'>
       <Link
         onClick={() => {
           onclickPic(picture.id);

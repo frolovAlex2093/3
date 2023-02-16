@@ -12,7 +12,7 @@ export type IPictures = {
   id: number;
   name: string;
   src: string;
-  xs: number;
+  xs?: number;
   size: string;
   year: string;
 };
@@ -429,7 +429,7 @@ export const pictures: IPictures[] = [
   },
   {
     id: 50,
-    name: 'lorem',
+    name: 'Эскиз к Натюрморту «Нежность». Карандаш.',
     src: '/paints/50.jpg',
     size: '',
     year: '',
@@ -437,7 +437,7 @@ export const pictures: IPictures[] = [
   },
   {
     id: 51,
-    name: 'lorem',
+    name: 'Эскиз к натюрморту «Сине-голубой». Уголь.',
     src: '/paints/51.jpg',
     size: '',
     year: '',
@@ -445,7 +445,7 @@ export const pictures: IPictures[] = [
   },
   {
     id: 52,
-    name: 'lorem',
+    name: 'Золотые шары.',
     src: '/paints/52.jpg',
     size: '',
     year: '',
@@ -453,7 +453,7 @@ export const pictures: IPictures[] = [
   },
   {
     id: 53,
-    name: 'lorem',
+    name: 'Эскиз к натюрморту «Сказки Востока». Уголь.',
     src: '/paints/53.jpg',
     size: '',
     year: '',
