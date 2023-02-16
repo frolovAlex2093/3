@@ -38,13 +38,13 @@ export const GalleryItems: React.FC<IGalleryItems> = ({ pictures, onclickPic }) 
       <Box display='flex' flexDirection='row'>
         <Box display='flex' flexDirection='column' flex='0 0 50%'>
           {pictures.map((pictures) => {
-            if (pictures.id % 2 === 0 || pictures.id === 0)
+            if (pictures.id % 2 === 0 || pictures.id === 0 || pictures.id === 53)
               return <GalleryItem onclickPic={onclickPic} key={pictures.id} picture={pictures} />;
           })}
         </Box>
         <Box display='flex' flexDirection='column' flex='0 0 50%'>
           {pictures.map((pictures) => {
-            if (pictures.id % 2 !== 0)
+            if (pictures.id % 2 !== 0 && pictures.id !== 53)
               return <GalleryItem onclickPic={onclickPic} key={pictures.id} picture={pictures} />;
           })}
         </Box>
