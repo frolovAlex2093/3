@@ -14,11 +14,11 @@ const links: ILinks[] = [
 
 export const Home = () => {
   return (
-    <>
+    <Box height="100vh">
       <Header links={links}></Header>
-      <Box height='100vh'>
+      <Box>
         <SwiperHome></SwiperHome>
       </Box>
-    </>
+    </Box>
   );
 };
