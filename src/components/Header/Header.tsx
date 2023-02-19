@@ -10,7 +10,7 @@ interface IHeader {
 
 export const Header: React.FC<IHeader> = ({links}) => {
   return (
-    <Box display='flex' flexDirection="row" justifyContent="space-between" maxWidth="1400px"  width="100%" alignItems="center">
+    <Box display='flex' flexDirection="row" justifyContent="space-between" maxWidth="1000px"  width="100%" alignItems="center" margin="0 auto">
         <Logo />
         <Nav links={links}/>
     </Box>

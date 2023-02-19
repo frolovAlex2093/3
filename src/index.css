@@ -1,18 +1,19 @@
-html{
-  background-image: url("../public/pattern/old-paper.jpg") ;
+
+html {
+  background-image: url('../public/pattern/old-paper.jpg');
   background-size: 300px;
   /* background-image: url("../public/pattern/7b728944-f6d8-4fad-962a-90a1dec2c6ca.jpeg"); */
   background-repeat: repeat;
+  width: 100%;
 }
 
 body {
   margin: '15px';
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+  font-family: 'Old Standard TT', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: '15px';
-
 }
 
 code {
@@ -21,4 +22,37 @@ code {
 
 .Nav {
   display: none;
+}
+.nav_link {
+  position: relative;
+  padding-bottom: 5px;
+}
+.nav_link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 11;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(167, 127, 68);
+  opacity: 0;
+}
+.nav_link:hover {
+  transition: all ease-in-out 0.3s;
+  color: rgb(167, 127, 68);
+}
+.nav_link:hover::after {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+}
+.nav_link_active {
+  color: rgb(167, 127, 68) !important;
+}
+.nav_link_active::after {
+  opacity: 1;
+}
+
+.MuiTypography-root{
+  font-family: 'Old Standard TT', serif !important;
 }

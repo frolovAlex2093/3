@@ -1,3 +1,4 @@
+import { createMuiTheme } from '@mui/material';
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -10,7 +11,6 @@ function App() {
   const onclickPic = (id: number) => {
     setID(id);
   }
-
   return (
     <Routes>
       <Route path='/' element={<Home />} />

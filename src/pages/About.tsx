@@ -13,8 +13,8 @@ const links: ILinks[] = [
     name: 'Home',
     link: '/'
   },
-  { name: 'О себе', link: '/about', active: true },
-  { name: 'Галерея', link: '/gallery' }
+  { name: 'About', link: '/about', active: true },
+  { name: 'Gallery', link: '/gallery' }
 ];
 
 export const About = () => {

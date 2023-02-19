@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 export const Logo = () => {
   return (
-    <Box display='flex' margin='0 auto'>
+    <Box display='flex'>
       <Link to='/about' style={{ textDecoration: 'none' }}>
-        <Typography variant='h3' component='h3' gutterBottom color='black' fontSize='35px'>
+        <Typography className='nav_link' variant='h3' component='h3' gutterBottom color='black' fontSize='35px'>
           Михаил Цымбалюк
         </Typography>
       </Link>

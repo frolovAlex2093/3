@@ -22,8 +22,8 @@ const links: ILinks[] = [
     name: 'Home',
     link: '/'
   },
-  { name: 'О себе', link: '/about', active: true },
-  { name: 'Галерея', link: '/gallery' }
+  { name: 'About', link: '/about' },
+  { name: 'Gallery', link: '/gallery', active: true }
 ];
 
 export const pictures: IPictures[] = [

@@ -4,92 +4,39 @@ import './AboutBlock.css';
 
 export const AboutBlock = () => {
   return (
-    <Box
-      display='flex'
-      flexDirection='column'
-      margin='0 auto'
-      width='100%'
-      justifyContent='center'
-      alignItems='center'
-      marginBottom='70px'
-    >
-      <Box
-        className={'AboutBlock__container'}
-        display='flex'
-        flexDirection='row'
-        marginBottom='50px'
-        justifyContent='space-between'
-        width='70%'
-      >
-        <Box
-          // position='relative'
-          flexShrink='1'
-          display='block'
-          maxWidth='300px'
-          width='100%'
-          margin='10px'
-        >
+    <Box display='flex' flexDirection='column' alignItems='center'>
+      <Box className={'AboutBlock__container'} display='flex' width='100%' maxWidth='1000px'>
+        <Box className="AboutBlock__container_img" width='100%' margin='10px'>
           <img
             className='AboutBlock__img'
             style={{
-              display: 'block',
-              // position: 'absolute',
-              // top: '0',
-              // marginTop: '0',
-              // width: '100%',
-              objectFit: 'contain'
+              display: 'flex',
+
+              width: '100%',
+              height: '100%',
+              objectFit: 'contain',
+              objectPosition: 'top'
             }}
-            src='https://placehold.co/300x400'
+            src='/about/1.jpeg'
           />
         </Box>
-        <Box
-          marginTop='10px'
-          flexShrink='1'
-          // marginLeft='30px'
-          // width='700px'
-        >
-          <Typography
-          //  sx={{ height: '400px' }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas inventore corporis
-            eum accusantium, provident nihil aperiam quasi suscipit voluptatem reiciendis ea. Beatae
-            sed illum eum sunt ut accusantium explicabo. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, maxime totam, nobis voluptate eligendi ex illo officiis nam
-            repellat quos, id eum perferendis natus recusandae soluta sed accusantium alias cum.
+        <Box className="AboutBlock_text" marginTop='10px' marginLeft='30px'>
+          <Typography sx={{ fontSize: '20px' }}>
+            &emsp;Михаил Яковлевич Цымбалюк 1945г. <br></br>
+            <pre></pre> &emsp; С раннего детства Михаил Яковлевич отличался особым интересом к
+            живописи и любовью к математике. После школы поступил в Московский государственный
+            университет на факультет мехмата, закончил его, чуть позже защитил десегрегацию.
+            <br></br>&emsp; Долгое время работал на кафедре кафедре АСУ в Московском Текстильном
+            институте, ныне Текстильной Академии, где с большим удовольствием занимался
+            преподавательской деятельностью.
+            <br></br>&emsp;В сложные 90-е судьба забросила в сферу бизнеса, он состоялся как
+            руководитель бизнеса и с полной отдачей работал в сфере компьютеризации ГАИ г. Москвы.
+            <br></br>&emsp;Увлеченность же живописью, пронес через все эти годы и в попоследнее
+            время, когда появилась возможность, вернулся к идее живописания. Уверенно, настойчиво и
+            гармонично реализуя давнюю мечту.
+            <br></br>&emsp;Радует друзей и близких своим творчеством. В сборнике картин можно
+            уловить тонкий баланс в сочетании поиска новых решений и верности традиционному стилю.
           </Typography>
-        </Box>
-      </Box>
-      <Box
-        className={'AboutBlock__container reverse'}
-        display='flex'
-        flexDirection='row'
-        marginBottom='50px'
-        justifyContent='space-between'
-        width='70%'
-      >
-        <Box marginTop='10px'>
-          <Typography sx={{}}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas inventore corporis
-            eum accusantium, provident nihil aperiam quasi suscipit voluptatem reiciendis ea. Beatae
-            sed illum eum sunt ut accusantium explicabo. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, maxime totam, nobis voluptate eligendi ex illo officiis nam
-            repellat quos, id eum perferendis natus recusandae soluta sed accusantium alias cum.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas inventore corporis
-            eum accusantium, provident nihil aperiam quasi suscipit voluptatem reiciendis ea. Beatae
-            sed illum eum sunt ut accusantium explicabo. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, maxime totam, nobis voluptate eligendi ex illo officiis nam
-            repellat quos, id eum perferendis natus recusandae soluta sed accusantium alias cum.
-          </Typography>
-        </Box>
-        <Box display='block' maxWidth='400px' width='100%' height='100%' margin='10px'>
-          <img
-            className='AboutBlock__img'
-            style={{
-              display: 'block',
-              objectFit: 'contain'
-            }}
-            src='https://placehold.co/400x400'
-          />
         </Box>
       </Box>
     </Box>

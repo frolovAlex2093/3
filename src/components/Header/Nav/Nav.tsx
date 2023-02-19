@@ -16,9 +16,10 @@ export const Nav: React.FC<INav> = ({ links }) => {
       <Box display='flex' flexDirection='row' className='Nav'>
         {links.map((link: ILinks, index: number) => {
           return (
-            <Link key={index} to={link.link} style={{ textDecoration: 'none', margin: '10px' }}>
+            <Link  key={index} to={link.link} style={{ textDecoration: 'none', margin: '10px' }}>
               <Typography
-                sx={{ cursor: 'pointer' }}
+              className= {link.active ? "nav_link nav_link_active" : "nav_link"}
+                sx={{ cursor: 'pointer'}}
                 variant='h3'
                 component='h3'
                 gutterBottom

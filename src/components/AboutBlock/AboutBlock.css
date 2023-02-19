@@ -4,12 +4,19 @@
     justify-content: center !important;
     align-items: center !important;
     text-align: center !important;
+    height: "50vh" !important;
   }
   .AboutBlock__container.reverse {
     flex-direction: column-reverse !important;
   }
-
+.AboutBlock__container_img{
+  width: 50%!important;
+  margin-left: 10px!important;
+}
   .AboutBlock__img{
-    width: 100%;
+    /* width: 100%; */
+  }
+  .AboutBlock_text{
+    margin: 0!important;
   }
 }

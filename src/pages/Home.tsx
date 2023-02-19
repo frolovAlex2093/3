@@ -6,15 +6,16 @@ import { ILinks } from './About';
 const links: ILinks[] = [
   {
     name: 'Home',
-    link: '/'
+    link: '/',
+    active: true
   },
-  { name: 'О себе', link: '/about', active: true },
-  { name: 'Галерея', link: '/gallery' }
+  { name: 'About', link: '/about' },
+  { name: 'Gallery', link: '/gallery' }
 ];
 
 export const Home = () => {
   return (
-    <Box height="100vh">
+    <Box height='100vh'>
       <Header links={links}></Header>
       <Box>
         <SwiperHome></SwiperHome>

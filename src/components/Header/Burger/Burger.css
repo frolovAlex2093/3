@@ -1,6 +1,7 @@
 .burger {
     position: relative;
     cursor: pointer;
+    padding-bottom: 20px;
   }
   .burger__1, .burger__2, .burger__3 {
     width: 35px;
